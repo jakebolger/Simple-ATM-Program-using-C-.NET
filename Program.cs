@@ -10,7 +10,10 @@ public class cardHolder
 
     //Constructor
     //
-    public cardHolder(string cardNum, int pin, string firstName, string lastName, double balance)
+    //Constructors are special methods in C# that are automatically called when an object of a class is created 
+    //to initialize all the class data members. If there are no explicitly defined constructors in the class, 
+    //the compiler creates a default constructor automatically.
+    //public cardHolder(string cardNum, int pin, string firstName, string lastName, double balance)
     {
         this.cardNum = cardNum;
         this.pin = pin;
@@ -19,7 +22,7 @@ public class cardHolder
         this.balance = balance;
     }
 
-
+    //In c#, Encapsulation is a process of binding the data members and member functions into a single unit. 
     //getters
     //
     public String getNum()
@@ -144,7 +147,10 @@ public class cardHolder
             }
             catch {Console.WriteLine("Card not recognised Please try again");}
         }
-
+        
+        
+        //The try-catch statement consists of a try block followed by one or more catch clauses, which specify handlers for different exceptions
+        //
         Console.WriteLine("Please enter your pin");
         int userPin = 0;
         while(true)
